@@ -56,7 +56,12 @@ const list3 = new List({
   items: defaultItems,
 });
 
-const defaultLists = [list1, list2, list3];
+const list4 = new List({
+  name: "Click on list Name to view items.",
+  items: defaultItems,
+});
+
+const defaultLists = [list1, list2, list3, list4];
 
 app.get("/", (req, res) => {
   List.find({}, (err, foundItems) => {
